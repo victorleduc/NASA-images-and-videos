@@ -1,0 +1,12 @@
+<div class="margin">
+    <button routerLink="/results/{{searchWord}}" class="float-left btn btn-light">Back</button>
+    <h3>Detail of {{ name }}</h3>
+    <div style="text-align: center" *ngIf="type === 'image'">
+        <img src="{{details[index].href}}">
+    </div>
+    <div style="text-align: center" *ngIf="type === 'video'">
+        <video controls>
+            <source src="{{details[index].href}}" type="video/mp4">
+        </video>
+    </div>
+</div>

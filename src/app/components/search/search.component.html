@@ -1,0 +1,6 @@
+<div class="search">
+  <form [formGroup]='searchWord' (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Sun, moon, earth,..." formControlName="search">
+    <button type="submit" routerLink="/results/{{searchWord.value.search}}">Search</button>
+  </form>
+</div>
